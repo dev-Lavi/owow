@@ -12,6 +12,7 @@
 .category-image:hover {
     transform: scale(1.05); /* Subtle zoom */
     opacity: 0.9;
+    cursor: pointer;
 }
 
 /* Category grid container */

@@ -47,5 +47,6 @@
 .button-custom:hover {
   background-color: #D29C2A;
   color: white;
+  cursor: pointer;
 }
 

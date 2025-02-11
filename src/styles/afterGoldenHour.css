@@ -1,0 +1,134 @@
+.golden-hour-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.golden-hour-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.golden-hour-image {
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    top: 3px;
+}
+
+.golden-hour-content {
+    width: 65%;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #000;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-date {
+    font-size: 18px;
+    color: #b5b5b5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    font-family: karla;
+    top: -20px;
+}
+
+.golden-hour-title {
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.golden-hour-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: karla;
+}
+
+.golden-hour-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: karla;
+    align-self: flex-start;
+}
+
+.golden-hour-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .golden-hour-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .golden-hour-image {
+        width: 100%;
+        top: 0;
+    }
+
+    .golden-hour-content {
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .golden-hour-button {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .golden-hour-content {
+        padding: 30px;
+    }
+
+    .golden-hour-title {
+        font-size: 28px;
+    }
+
+    .golden-hour-description {
+        font-size: 16px;
+    }
+
+    .golden-hour-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .golden-hour-title {
+        font-size: 24px;
+    }
+
+    .golden-hour-description {
+        font-size: 14px;
+    }
+
+    .golden-hour-button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}

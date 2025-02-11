@@ -1,0 +1,146 @@
+.gifts-section { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f3ee; /* Light beige background */
+ /* Added padding for better spacing on smaller screens */
+}
+
+.gifts-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.gifts-content {
+    width: 60%;
+    padding-right: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: left;
+    position: relative;
+    left: 10px;
+}
+
+.gifts-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.gifts-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+.gifts-button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Karla', sans-serif;
+}
+
+.gifts-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling with blue border */
+.gifts-image-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 40px;
+    top: -39px;
+}
+
+.gifts-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gifts-section {
+        padding: 40px 5%;
+    }
+
+    .gifts-container {
+        flex-direction: column;
+        padding: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gifts-content {
+        width: 100%;
+        padding-right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .gifts-image-container {
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin-top: 20px;
+    }
+
+    .gifts-image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gifts-section {
+        padding: 30px 3%;
+    }
+
+    .gifts-container {
+        padding: 20px;
+    }
+
+    .gifts-title {
+        font-size: 28px;
+    }
+
+    .gifts-description {
+        font-size: 16px;
+    }
+
+    .gifts-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .gifts-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gifts-title {
+        font-size: 24px;
+    }
+
+    .gifts-description {
+        font-size: 14px;
+    }
+
+    .gifts-button {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+}
