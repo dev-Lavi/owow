@@ -1,4 +1,4 @@
-import React from "react";   
+import React from "react";    
 import "../styles/hero.css";
 import HeroImage from "../assets/images/image1.svg";
 
@@ -12,17 +12,19 @@ const HeroSection = () => {
         className="absolute inset-0 top-[36px] w-full h-full object-cover object-[50%_0%]"
       />
 
-      {/* Text Content */}
-      <div className="absolute top-[45%] left-[5%] text-black max-w-lg">
-        <h1 className="text-6xl font-serif font-medium leading-tight">
+      {/* Text Content (Left-Aligned) */}
+      <div className="absolute top-[45%] left-[5%] text-black max-w-lg text-left">
+        <h1 className="text-6xl font-[Cormorant_Garamond] font-medium leading-tight">
           Welcome the <br /> Season of Change
         </h1>
-        <p className="text-xl mt-3 leading-normal">
-          Fall has arrived. Shop for our new releases <br /> starting today.
+        <p className="text-xl leading-normal" style={{ fontSize: "1.7rem", marginTop: "1px", fontFamily: "'Karla', sans-serif" }}>
+         Fall has arrived. Shop for our new releases starting today.
         </p>
-        <button className="mt-5 px-6 py-2 bg-transparent border border-black text-black text-lg font-medium rounded-md hover:bg-black hover:text-white transition">
-          Shop Now
+
+        <button className="button-custom" style={{ fontFamily: "'Karla', sans-serif" }}>
+         Shop Now
         </button>
+
       </div>
     </section>
   );

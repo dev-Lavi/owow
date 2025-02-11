@@ -1,16 +1,92 @@
-nav { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: #6b7280; /* Tailwind gray-700 */
-  }
-  
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-left a {
+  font-size: 22px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: #A66F1B;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-left a:hover {
+  color: #8C5714;
+  transform: scale(1.05);
+}
+
+.nav-left img {
+  width: 27px;
+  height: 27px;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.nav-left img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Center Logo */
+.nav-center {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center img {
+  height: 80px;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-right img {
+  width: 27px;
+  height: 27px;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.nav-right img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Cart Icon */
+.nav-cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-cart img {
+  width: 27px;
+  height: 27px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.nav-cart img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
