@@ -9,7 +9,7 @@ const HeroSection = () => {
       <img 
         src={HeroImage} 
         alt="Jewelry Hero" 
-        className="absolute inset-0 top-[36px] w-full h-full object-cover object-[50%_0%]"
+        className="absolute inset-0 top-[27px] w-full h-full object-cover object-[50%_0%]"
       />
 
       {/* Text Content (Left-Aligned) */}

@@ -2,11 +2,13 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding: 1rem 2.4rem;
   background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 8px rgba(219, 216, 205, 1), 
+              0 10px 0 rgba(219, 216, 205, 1); /* Added second shadow for the line */
   width: 100%;
 }
+
 
 /* Left Section */
 .nav-left {
@@ -49,7 +51,7 @@ nav {
 }
 
 .nav-center img {
-  height: 80px;
+  height: 90px;
 }
 
 /* Right Section */
@@ -90,3 +92,5 @@ nav {
   opacity: 1;
   transform: scale(1.1);
 }
+
+

@@ -1,0 +1,57 @@
+/* Ensure the full image is visible */
+.category-image {
+    border-radius: 0; /* Removes rounded corners */
+    width: 100%;
+    height: 200px; /* Adjust as needed for uniform height */
+    object-fit: contain; /* Ensures the full image is visible */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background-color: white; /* Optional: Avoid empty spaces */
+}
+
+/* Hover effect */
+.category-image:hover {
+    transform: scale(1.05); /* Subtle zoom */
+    opacity: 0.9;
+}
+
+/* Category grid container */
+.category-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Category item container */
+.category-item {
+    flex: 1 1 calc(20% - 10px); /* Makes sure each item gets equal space */
+    max-width: 200px; /* Ensures consistency */
+    text-align: center;
+}
+
+/* Image styling inside category-item */
+.category-item img {
+    width: 100%; 
+    height: 200px; /* Ensures uniform height */
+    object-fit: cover; /* Prevents image distortion */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .category-item {
+        flex: 1 1 calc(33.33% - 10px); /* 3 columns in tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .category-item {
+        flex: 1 1 calc(50% - 10px); /* 2 columns in smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item {
+        flex: 1 1 100%; /* Single column for mobile */
+    }
+}
