@@ -1,26 +1,40 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar";
-import Hero from "./components/HeroSection";
+import Footer from "./components/footer";
+
+// Import Home Page Components
+import HeroSection from "./components/HeroSection";
 import Categories from "./components/categories";
 import AfterGoldenHour from "./components/AfterGoldenHour";
 import GiftOfTheSeason from "./components/GiftOfTheSeason";
-import Footer from "./components/footer";
-import HeroSection from "./components/HeroSection";
 import WhatWeAreMadeFor from "./components/WhatWeAreMadeFor";
 
-function App() {
+// Import About Us Page
+import AboutUs from "./pages/aboutus"; // Ensure correct filename casing
+
+function Home() {
   return (
-    <div>
-      <Navbar />
+    <>
       <HeroSection />
       <Categories />
       <AfterGoldenHour />
       <GiftOfTheSeason />
       <WhatWeAreMadeFor />
-      <Footer />
-      <h1 className="text-center text-4xl mt-10">Welcome to Owow Jewellery</h1>
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Navbar /> {/* Navbar stays at the top on all pages */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+      </Routes>
+      <Footer /> {/* Footer stays at the bottom on all pages */}
+    </Router>
   );
 }
 
