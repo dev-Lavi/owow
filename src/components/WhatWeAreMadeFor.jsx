@@ -1,7 +1,11 @@
-import React from "react"; 
-import "../styles/WhatWeAreMadeFor.css"
+import React from "react";  
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import "../styles/WhatWeAreMadeFor.css";
 import section3Image from "../assets/images/section3.svg"; // Import image
+
 const WhatWeAreMadeFor = () => {
+  const navigate = useNavigate(); // Hook for navigation
+
   return (
     <section className="made-for-section">
       <div className="made-for-container">
@@ -30,7 +34,10 @@ const WhatWeAreMadeFor = () => {
             meaningful pieces, and the power of jewelry to make you feel 
             extraordinary. Owow—crafted for you, made to shine.
           </p>
-          <button className="made-for-button">ABOUT US</button>
+          {/* Updated button with navigation */}
+          <button className="made-for-button" onClick={() => navigate("/about-us")}>
+            ABOUT US
+          </button>
         </div>
       </div>
     </section>

@@ -55,6 +55,8 @@
 
 .footer-logo {
   width: 130px; /* Slightly reduced size */
+  position: relative;
+  top: -15px;
   margin-bottom: 12px;
 }
 

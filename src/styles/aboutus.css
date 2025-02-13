@@ -1,18 +1,21 @@
 .aboutus-container {
-    text-align: center;
-    padding: 50px;
-    font-family: "Karla", sans-serif;
-  }
-  
-  .aboutus-container h1 {
-    font-size: 2.5rem;
-    font-family: "Cormorant Garamond", serif;
-  }
-  
-  .aboutus-container p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
+  color: white;
+  padding: 100px 50px;
+  text-align: left;
+}
+
+.aboutus-content {
+  max-width: 600px;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
