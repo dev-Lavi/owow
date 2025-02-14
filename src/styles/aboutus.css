@@ -2,6 +2,8 @@
   color: white;
   padding: 100px 50px;
   text-align: left;
+  position: relative;
+  top: 15px;
 }
 
 .aboutus-content {
@@ -18,4 +20,62 @@ p {
   font-family: "Karla", sans-serif;
   font-size: 18px;
   line-height: 1.6;
+}
+
+.owner-info {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: center;
+  color: black; /* Set font color to black */
+}
+
+.owner-info h2 {
+  font-size: 2rem; /* Increased font size */
+  font-family: 'Cormorant Garamond', serif; /* Cormorant Garamond for h2 */
+  font-weight: bold;
+}
+
+.owner-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.owner-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.owner-image:hover {
+  transform: scale(1.1); /* Slightly enlarges the image */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.owner-text {
+  max-width: 500px;
+  font-family: 'Karla', sans-serif; /* Karla for other text */
+  font-size: 1rem; /* Standard font size */
+  color: black; /* Set text color to black */
+}
+
+.owner-text p {
+  margin: 5px 0;
+}
+
+.owner-text a {
+  color: black; /* Make links black */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.owner-text a:hover {
+  text-decoration: underline;
 }

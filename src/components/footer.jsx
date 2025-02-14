@@ -15,19 +15,19 @@ const Footer = () => {
           {/* Customer Services */}
           <div className="footer-column">
             <h3>CUSTOMER SERVICES</h3>
-            <a href="#">Contact Us</a>
-            <a href="#">Frequently Asked Questions</a>
-            <a href="#">Schedule an Appointment</a>
+            <a href="/about-us">Contact Us</a>
+            <a href="/about-us">Frequently Asked Questions</a>
+            <a href="/about-us">Schedule an Appointment</a>
           </div>
 
           {/* About Us */}
           <div className="footer-column">
             <h3>ABOUT US</h3>
-            <a href="#">Origins</a>
-            <a href="#">Our Purpose</a>
-            <a href="#">Careers</a>
-            <a href="#">Sustainability</a>
-            <a href="#">Giving Back</a>
+            <a href="/about-us">Origins</a>
+            <a href="/about-us">Our Purpose</a>
+            <a href="/about-us">Careers</a>
+            <a href="/about-us">Sustainability</a>
+            <a href="/about-us">Giving Back</a>
           </div>
 
           {/* Material Care */}
@@ -52,8 +52,9 @@ const Footer = () => {
         <div className="footer-right">
           <img src={Logo} alt="Owow Jewellery" className="footer-logo" />
           <div className="footer-social-icons">
-            <a href="#"><img src={InstagramIcon} alt="Instagram" /></a>
-            <a href="#"><img src={TwitterIcon} alt="Twitter" /></a>
+            <a href="https://www.instagram.com/jwellery_owow?igsh=dnN0eXY4MnI4MG1s
+"><img src={InstagramIcon} alt="Instagram" /></a>
+            <a href=""><img src={TwitterIcon} alt="Twitter" /></a>
             <a href="#"><img src={FacebookIcon} alt="Facebook" /></a>
             <a href="#"><img src={YoutubeIcon} alt="YouTube" /></a>
             <a href="#"><img src={LinkedinIcon} alt="LinkedIn" /></a>

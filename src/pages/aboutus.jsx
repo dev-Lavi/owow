@@ -1,8 +1,9 @@
-import React from "react";  
+import React from "react";   
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../styles/aboutus.css";
-import backgroundImage from "../assets/images/aboutusbg.svg"; // Make sure to place the image in the correct path
+import backgroundImage from "../assets/images/aboutusbg.svg"; 
+import ownerImage from "../assets/images/owner.jpg"; // Make sure to place the image in the correct path
 
 const AboutUs = () => {
   return (
@@ -41,21 +42,23 @@ const AboutUs = () => {
             story.
           </p>
 
-          {/* Owner Information */}
+          {/* Founder Section */}
           <div className="owner-info">
             <h2>Meet the Founder</h2>
-            <p>
-              Owow was founded by <strong>Lukky Yadav</strong>, a passionate entrepreneur with a vision to blend 
-              elegance and craftsmanship into every piece of jewelry. With a deep appreciation 
-              for art and design, Lukky Yadav created Owow to offer unique, beautifully crafted jewelry 
-              that enhances every occasion. His dedication to quality and innovation has made Owow a 
-              brand that stands for sophistication, grace, and timeless beauty.
-            </p>
-            <p>
-              Lukky believes that jewelry is not just an accessory but a reflection of one's 
-              personality and emotions. His mission is to provide exquisite jewelry that tells 
-              a story and creates lasting memories.
-            </p>
+            <div className="owner-details">
+              <img src={ownerImage} alt="Lucky Yadav - Founder of Owow" className="owner-image" />
+              <div className="owner-text">
+                <p>
+                  <strong>Lucky Yadav</strong>, a passionate entrepreneur 
+                  with a vision to blend elegance and craftsmanship into every piece of jewelry. 
+                  With a deep appreciation for art and design, Lucky created Owow to offer 
+                  unique, beautifully crafted jewelry that enhances every occasion.
+                </p>
+                <p><strong>Contact Lucky:</strong></p>
+                <p>Email: <a href="mailto:ylakky780@gmail.com">ylakky780@gmail.com</a></p>
+                <p>Phone: <a href="tel:+918384876037">+91 8384876037</a></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
