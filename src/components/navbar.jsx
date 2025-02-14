@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Menu Links */}
         <Link to="/" classname="sidebar-link">HOME</Link>
         <Link to="/about-us" className="sidebar-link">ABOUT US</Link>
-        <Link to="/products" className="hide-on-small">PRODUCTS</Link>
+        <Link to="/products" className="sidebar-link">PRODUCTS</Link>
 
         {/* Search & Wishlist Icons */}
         <div className="sidebar-icons">
